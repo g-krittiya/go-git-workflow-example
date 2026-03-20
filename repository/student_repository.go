@@ -6,19 +6,13 @@ import (
 	"workflow-example.com/model"
 )
 
-// StudentRepository Repository Interface for student repository
-type StudentRepository interface {
-	GetAll() ([]model.Student, error)
-}
-
 type Repository struct {
 	DB *sql.DB
 }
 
-func NewStudentRepository(db *sql.DB) *Repository {
-	return &Repository{
-		DB: db,
-	}
+// StudentRepository Repository Interface for student repository
+type StudentRepository interface {
+	GetAll() ([]model.Student, error)
 }
 
 // GetAll Implementation of Repository Interface

@@ -16,6 +16,7 @@ func New(repo repository.Repository) *StudentService {
 	}
 }
 
+// Service Interface for student service
 type Service interface {
 	GetStudents() ([]model.Student, error)
 }
