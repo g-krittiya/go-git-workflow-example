@@ -1,4 +1,5 @@
 # Example Project Structure
+``` text
 student-api/
 ├── cmd/
 │   └── server/
@@ -18,3 +19,4 @@ student-api/
 ├── go.mod                   # Module definitions
 ├── go.sum                   # Checksums สำหรับ dependencies
 └── Makefile                 # สคริปต์สำหรับ Build/Run/Test
+```
